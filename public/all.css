@@ -1,0 +1,219 @@
+.footer {
+    background-color: rgb(100, 50, 200);
+    text-align: center;
+    display: flex;
+    float: left;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10px 0px 10px 0px;
+}
+
+.mName {
+    margin: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: larger;
+    color: blue;
+}
+
+.mType {
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(250, 200, 100);
+    background-color: rgb(100, 50, 200);
+}
+
+.mDescription {
+    margin: 5px;
+    padding: 10px;
+    font-style: italic;
+    font-size: larger;
+    font-weight: bold
+}
+
+.mCalorie {
+    margin: 5px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(0, 100, 0);
+}
+
+.mCard {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: green;
+    text-align: left;
+    display: block;
+    float: left;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    margin: 10px;
+    width: 30%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.main {
+    border-style: solid;
+    border-color: whitesmoke;
+    background-color: whitesmoke;
+    text-align: center;
+    overflow-y: scroll;
+    border-radius: 2px;
+    height: 420px;
+}
+
+.mid-div {
+    display: flex;
+    justify-content: space-evenly;
+    float: left;
+
+}
+
+.header {
+    text-align: center;
+    height: 320px;
+    margin: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.head {
+    border-style: solid;
+    background-color: rgb(100, 50, 200);
+    color: white;
+    text-align: center;
+}
+
+.body {
+    padding-top: 50px;
+    margin: 10px 100px;
+}
+
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border: 1px solid #ecf0f1;
+    background: #ecf0f1;
+    padding: 5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[type="date"],
+focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: rgb(100, 50, 200);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* For !Home page exclusive */
+
+.inputAddOne,
+select {
+    width: 50%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 15.50px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputAddOneN,
+select {
+    width: 50%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 15.50px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputAddOneS {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.mid-divf {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        display: none;
+    }
+}

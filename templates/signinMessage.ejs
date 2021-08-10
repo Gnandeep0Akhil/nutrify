@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/all.css" type="text/css">
+    </head>
+    <body>
+        <div class="body">
+        <div class="head">
+            <h1>Nutrify.Me</h1>
+        </div>
+        <div class="mid-divf">
+        <form action="/auth/signin" method="POST">
+            <input class="inputAddOne" type="email" name="email" placeholder="Mail Id..."><br>
+            <input class="inputAddOne" type="password" name="password" placeholder="Password..."><br>
+            <p style="padding-bottom: 5px; color: rgb(100, 50, 200);"><%= message %></p> <br><br>
+            <button class="inputAddOneS" type="submit">SignIn</button><br>
+        </form>
+        <h3>(or)</h3>
+        </div>
+        <div class="footer">
+            <button style="background-color: #4CAF50;"><a href="/auth/signup">SignUp</a></button>
+        </div>
+        </div>
+    </body>
+</html>

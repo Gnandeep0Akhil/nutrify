@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/all.css" type="text/css">
+    </head>
+    <body>
+        <div class="body">
+        <div class="head">
+            <h1>Nutrify.Me</h1>
+        </div>
+        <div class="mid-divf">
+        <form method="POST" action="/home/addOne">
+            <input class="inputAddOne" type="text" name="mType" placeholder="Type of your meal...">
+            <input class="inputAddOne" type="text" name="mName" placeholder="Name your meal...">
+            <input class="inputAddOne" type="text" name="mDescription" placeholder="Short description...">
+            <input class="inputAddOneN" type="number" name="mCalorie" placeholder="Estimated calories..."><br>
+            <button class="inputAddOneS" type="submit" onclick="displayMeal()">Add</button>
+        </form>
+        </div>
+        <div class="footer">
+            <button style="background-color: orange;"> <a href="/home/profile"> Profile</a> </button>
+            <button style="background-color: #4CAF50;"> <a href="/home">Home</a> </button>
+            <form method="POST" action="/auth/signout">
+                <button type="submit" style="background-color: orange;">SignOut</button>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

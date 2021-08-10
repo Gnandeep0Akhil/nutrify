@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/all.css" type="text/css">
+    </head>
+    <body>
+        <div class="body">
+        <div class="head">
+            <h1>Nutrify.Me</h1>
+        </div>
+        <div class="mid-div">
+        <div class="header">
+            <div style="height: 50%;">
+            <form action="/home/meals" method="GET"">
+                <label for="meals" style="font-size: large; font-weight: bold;">Get Meals On:</label><br><br>
+                <input type="date" id="mealsDate" name="date"><br><br>
+                <input type="submit">
+            </form>
+            </div>
+            <div style="height: 50%;">
+            <h4 style="font-size: large; font-weight: bold;">Calories Consumed:</h4>
+            <h3 style="color: green; font-size: 40px;"><%= calories %>/<%= data %></h3>
+            </div>
+        </div>
+        </div>
+        <div class="main">
+            <h4>Your Meals</h4>
+		    <% value.forEach((item)=>{%>
+            <div class="mCard">
+                <div class="mName"> <%=item.mName%></div>
+                <div class="mType">Type: <%=item.mType%></div>
+                <div class="mDescription">~<%=item.mDescription%></div>
+                <div class="mCalorie">Calories: <%=item.mCalorie%></div>
+            </div>
+            <%})%>
+        </div>
+        <div class="footer">
+            <button style="background-color: orange;"> <a href="/home/profile"> Profile</a> </button>
+            <button style="background-color: orange;"> <a href="/home/addOne"> Add One</a> </button>
+            <form method="POST" action="/auth/signout">
+                <button type="submit" style="background-color: #4CAF50;">SignOut</button>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
